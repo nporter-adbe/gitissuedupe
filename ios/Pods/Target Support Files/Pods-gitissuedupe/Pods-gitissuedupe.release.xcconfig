@@ -1,7 +1,7 @@
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/DoubleConversion" "${PODS_ROOT}/Headers/Public/React" "${PODS_ROOT}/Headers/Public/glog" "${PODS_ROOT}/Headers/Public/yoga"
-LIBRARY_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/DoubleConversion" "${PODS_CONFIGURATION_BUILD_DIR}/Folly" "${PODS_CONFIGURATION_BUILD_DIR}/React" "${PODS_CONFIGURATION_BUILD_DIR}/glog" "${PODS_CONFIGURATION_BUILD_DIR}/yoga"
-OTHER_LDFLAGS = $(inherited) -ObjC -l"DoubleConversion" -l"Folly" -l"React" -l"glog" -l"stdc++" -l"yoga" -framework "JavaScriptCore"
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/DoubleConversion" "${PODS_ROOT}/Headers/Public/RCTACPCore" "${PODS_ROOT}/Headers/Public/React" "${PODS_ROOT}/Headers/Public/glog" "${PODS_ROOT}/Headers/Public/yoga"
+LIBRARY_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/DoubleConversion" "${PODS_CONFIGURATION_BUILD_DIR}/Folly" "${PODS_CONFIGURATION_BUILD_DIR}/RCTACPCore" "${PODS_CONFIGURATION_BUILD_DIR}/React" "${PODS_CONFIGURATION_BUILD_DIR}/glog" "${PODS_CONFIGURATION_BUILD_DIR}/yoga" "${PODS_ROOT}/../../node_modules/@adobe/react-native-acpcore/ios/libs"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"ACPCore_iOS" -l"ACPIdentity_iOS" -l"ACPLifecycle_iOS" -l"ACPSignal_iOS" -l"DoubleConversion" -l"Folly" -l"RCTACPCore" -l"React" -l"c++" -l"glog" -l"sqlite3.0" -l"stdc++" -l"yoga" -l"z" -framework "JavaScriptCore" -framework "SystemConfiguration" -framework "UIKit" -framework "UserNotifications" -framework "WebKit"
 PODS_BUILD_DIR = ${BUILD_DIR}
 PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
 PODS_PODFILE_DIR_PATH = ${SRCROOT}/.

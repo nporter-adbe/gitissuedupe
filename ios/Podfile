@@ -56,6 +56,8 @@ pod 'Folly', :podspec => "#{rn_path}/third-party-podspecs/Folly.podspec"
 #
 # pod 'RNImageCropPicker', :path =>  '../node_modules/react-native-image-crop-picker'
 
+  pod 'RCTACPCore', :path => '../node_modules/@adobe/react-native-acpcore'
+
 end
 
 post_install do |installer|
